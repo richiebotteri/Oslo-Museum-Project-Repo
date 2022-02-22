@@ -1,4 +1,6 @@
-/* Global Css variables for use on the project */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;700&family=Source+Serif+4:wght@500;600;700&display=swap");
+
+/* Global Css Variables */
 
 :root {
    /* Colors */
@@ -27,38 +29,111 @@
    --font-scale: 1.2;
    --font-base-size: 16px;
 
-
-   --text-x-small: calc(var(--text-small) / var(--font-scale));;;
-   --text-small: calc(var(--text-medium) / var(--font-scale));;
-   --text-medium: calc(var(--font-base-size) / var(--font-scale));;
+   --text-x-small: calc(var(--text-small) / var(--font-scale));
+   --text-small: calc(var(--text-medium) / var(--font-scale));
+   --text-medium: calc(var(--font-base-size) / var(--font-scale));
    --text-large: calc(var(--font-base-size) * var(--font-scale));
    --text-x-large: calc(var(--text-large) * var(--font-scale));
-   
    --font-h3: calc(var(--text-x-large) * var(--font-scale));
    --font-h2: calc(var(--font-h3) * var(--font-scale));
    --font-h1: calc(var(--font-h2) * var(--font-scale));
 
+   /* Font-weight */
 
-  }
+   --font-weight-bold: 700;
+   --font-weight-semi-bold: 600;
+   --font-weight-medium: 500;
 
-  body {
-    /* Base font size */
-    font-size: var(--font-base-size);
-  }
+   /* Margin & Padding size */
+   --margin-base: 100px;
+   --padding-base: 20px;
+}
 
-  h1 {font-size: var(--font-h1)};
-  h2 {font-size: var(--font-h2)};
-  h3 {font-size: var(--font-h3)};
- 
+* {
+   /* Base font size */
+   font-size: var(--font-base-size);
+   text-decoration: none;
+}
 
+body {
+   font-family: "Source Sans Pro", sans-serif;
+}
+
+:is(h1, h2, h3) {
+   font-family: "Source Serif 4", sans-serif;
+}
+
+h1 {
+   font-size: var(--font-h1);
+   font-weight: var(--font-weight-bold);
+}
+h2 {
+   font-size: var(--font-h2);
+   font-weight: var(--font-weight-bold);
+}
+h3 {
+   font-size: var(--font-h3);
+   font-weight: var(--font-weight-bold);
+}
+
+/* Utility classes */
+
+.grid {
+   display: grid;
+}
+
+.flex {
+   display: flex;
+}
+
+.margin-section {
+   margin: var(--margin-base) 0;
+}
+
+.margin-content {
+   margin: calc(var(--margin-base) / 2) 0;
+}
+
+.padding-content {
+   padding: calc(var(--padding-base) * 2) var(--padding-base);
+}
+
+/* Utility classes */
+
+.cta {
+   display: inline-flex;
+   width: 180px;
+   height: 45px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   border-radius: 10px;
+   font-size: var(--text-x-large);
+   font-weight: var(--font-weight-bold);
+}
+
+.cta--yellow {
+   background-color: var(--container-yellow);
+   color: var(--text-brown);
+}
+
+.cta--purple {
+   background-color: var(--container-dark-purple);
+   color: var(--text-light);
+}
 
 /* --------------------------------------------------------------------------------------------------------- */
 /* Media Query Desktop */
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+   :root {
+      --font-scale: 1.333;
+      --margin-base: 200px;
+      --padding-base: ;
+   }
 
-    :root {
-      --font-scale: 1.141;
-    }
-
-
+   .cta {
+      width: 240px;
+      height: 60px;
+   }
+}
