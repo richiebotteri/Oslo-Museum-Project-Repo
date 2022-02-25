@@ -246,6 +246,7 @@ h3 {
 .logo-section__name {
    font-weight: bold;
    color: var(--text-light);
+   opacity: 0.9;
 }
 
 .header-nav {
@@ -256,7 +257,7 @@ h3 {
 .banner-section {
    z-index: 3;
    color: var(--text-light);
-   background: linear-gradient(180deg, rgba(57, 42, 89, 0.5) 0%, rgba(57, 42, 89, 0.5) 100%), url(/images/banner-homepage.jpg) no-repeat center/cover;
+   background: linear-gradient(180deg, rgba(57, 42, 89, 0.5) 0%, rgba(57, 42, 89, 0.5) 100%), url("/images/Homepage-Hero-banner.jpg") no-repeat center/cover;
 }
 
 .banner-container {
@@ -334,9 +335,9 @@ h3 {
 .sticky-menu-open {
    box-sizing: border-box;
    position: absolute;
-   top: -624px;
+   top: -324px;
    left: -240px;
-   height: 621px;
+   height: 321px;
    line-height: 1.9;
    cursor: pointer;
    background-color: var(--container-yellow);
@@ -368,6 +369,9 @@ h3 {
 
 .cta-visit-us__img {
    display: none;
+   width: 100%;
+   height: 100%;
+   background: no-repeat center/cover url("/images/Visit_banner-img.jpg");
 }
 
 /* Explore Card Styles */
@@ -396,15 +400,15 @@ h3 {
 }
 
 .explore-cta-card__image-field--kids {
-   background: no-repeat center/170% url(/images/explore_For-kids.jpg);
+   background: no-repeat center/170% url("/images/explore_For-kids.jpg");
 }
 
 .explore-cta-card__image-field--teacher {
-   background: no-repeat center/170% url(/images/explore_For-kids.jpg);
+   background: no-repeat center/170% url("/images/explore_for-teachers.jpg");
 }
 
 .explore-cta-card__image-field--researcher {
-   background: no-repeat center/170% url(/images/explore_For-kids.jpg);
+   background: no-repeat center/170% url("/images/explore_for-reasearchers.jpg");
 }
 
 .explore-cta-card__label-field {
@@ -608,6 +612,10 @@ h3 {
 
    .cta-visit-us {
       margin-top: calc(var(--margin-base) * 2);
+   }
+
+   .cta-visit-us__content {
+      width: 90%;
    }
 
    .cta-visit-us__img {
