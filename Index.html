@@ -10,11 +10,11 @@
    </head>
    <body class="grid">
       <header class="header">
-         <div class="header-wrapper section-width margin-center grid">
-            <div class="header-logo-section flex">
-               <div class="header-logo-section__img"></div>
-               <div class="header-logo-section__name">Oslo Science Museum</div>
-            </div>
+         <div class="header-wrapper container-width margin-center grid">
+            <a href="#" class="logo-section__name flex center-y">
+               <div class="logo-section__img"></div>
+               Oslo Science Museum
+            </a>
             <nav class="header-nav">
                <ul class="header-nav__list flex">
                   <li class="header-nav__items">
@@ -35,24 +35,24 @@
       </header>
       <main class="main">
          <div class="banner-section">
-            <div class="banner-slogan section-width margin-center flex center-x">
-               <h1 class="banner-slogan__text">A space for does that seek and wonder</h1>
-            </div>
-            <div class="cta-visit-us grid section-width margin-center center-x">
-               <div class="cta-visit-us__content">
-                  <h2 class="cta-visit-us__content-title">Plan your visit</h2>
-                  <p class="cta-visit-us__content-title text-size-large">We made a list of everything your need to know</p>
-                  <a href="visit.html" class="cta cta--yellow">Start planning</a>
-               </div>
-               <div class="cta-visit-us__img"></div>
+            <div class="banner-container banner-container--homepage container-width-wide margin-center padding-vertical-x2 flex center-y">
+               <h1 class="banner-slogan__text padding-all-sides">A space for does that seek and wonder</h1>
             </div>
          </div>
-         <div class="explore-cta-section section-width margin-center margin-vertical grid center-x">
+         <div class="cta-visit-us margin-center container-width-wide flex">
+            <div class="cta-visit-us__content padding-all-sides flex">
+               <h2 class="cta-visit-us__content-title">Plan your visit</h2>
+               <p class="cta-visit-us__content-title text-size-large">We made a list of everything your need to know</p>
+               <a href="visit.html" class="cta cta--purple">Start planning</a>
+            </div>
+            <div class="cta-visit-us__img"></div>
+         </div>
+         <div class="explore-cta-section container-width margin-center margin-vertical grid center-x">
             <h2 class="explore-cta-section__title">Explore Museum</h2>
             <a href="#" class="explore-cta-card grid">
                <div class="explore-cta-card__image-field explore-cta-card__image-field--kids"></div>
                <div class="explore-cta-card__label-field flex center-x">
-                  <p class="explore-cta-card__label-field-title text-size-x-large">For kids</p>
+                  <p class="explore-cta-card__label-field-title text-size-x-large">For Kids</p>
                   <div class="explore-cta-card__icon-field icon-field flex center-x center-y">
                      <i class="fa-solid fa-book-open-reader"></i>
                   </div>
@@ -61,7 +61,7 @@
             <a href="#" class="explore-cta-card grid">
                <div class="explore-cta-card__image-field explore-cta-card__image-field--kids"></div>
                <div class="explore-cta-card__label-field flex center-x">
-                  <p class="explore-cta-card__label-field-title text-size-x-large">For kids</p>
+                  <p class="explore-cta-card__label-field-title text-size-x-large">For Teachers</p>
                   <div class="explore-cta-card__icon-field icon-field flex center-x center-y">
                      <i class="fa-solid fa-book-open-reader"></i>
                   </div>
@@ -70,14 +70,14 @@
             <a href="#" class="explore-cta-card grid">
                <div class="explore-cta-card__image-field explore-cta-card__image-field--kids"></div>
                <div class="explore-cta-card__label-field flex center-x">
-                  <p class="explore-cta-card__label-field-title text-size-x-large">For kids</p>
+                  <p class="explore-cta-card__label-field-title text-size-x-large">For Researchers</p>
                   <div class="icon-field flex center-x center-y">
                      <i class="fa-solid fa-book-open-reader"></i>
                   </div>
                </div>
             </a>
          </div>
-         <div class="event-cta-section section-width margin-center margin-vertical grid center-x">
+         <div class="event-cta-section container-width margin-center margin-vertical grid center-x">
             <h2 class="event-cta-section__title">Discover Events</h2>
             <a href="#" class="event-cta-card grid">
                <div class="event-cta-card__title-container flex center-y">
@@ -96,7 +96,7 @@
                <div class="event-cta-card__image event-cta-card__image--tuesday-event"></div>
                <div class="event-cta-card__date-container flex center-x center-y">
                   <div class="icon-field icon-field--event flex center-x center-y"><i class="fa-solid fa-star"></i></div>
-                  <p class="event-cta-card__date text-size-x-large">Monday 21/03</p>
+                  <p class="event-cta-card__date text-size-x-large">Tuesday 22/03</p>
                </div>
             </a>
             <a href="#" class="event-cta-card grid">
@@ -106,11 +106,41 @@
                <div class="event-cta-card__image event-cta-card__image-friday-event"></div>
                <div class="event-cta-card__date-container flex center-x center-y">
                   <div class="icon-field icon-field--event flex center-x center-y"><i class="fa-solid fa-star"></i></div>
-                  <p class="event-cta-card__date text-size-x-large">Monday 21/03</p>
+                  <p class="event-cta-card__date text-size-x-large">Friday 26/03</p>
                </div>
             </a>
          </div>
       </main>
-      <footer style="background-color: lightseagreen"></footer>
+      <footer class="footer">
+         <div class="footer-section container-width margin-center padding-vertical-x2 grid center-x">
+            <div class="footer-section__location">
+               <h3>Location</h3>
+               <p class="text-size-large">Edvard Munchs,</p>
+               <p class="text-size-large">Plass 12,</p>
+               <p class="text-size-large">0194 Oslo</p>
+            </div>
+            <div class="footer-section__opening-time">
+               <h3>Opening Time</h3>
+               <p class="text-size-large">Monday - Friday,</p>
+               <p class="text-size-large">09:00 to 20:00</p>
+            </div>
+            <div class="footer-section__contact-us">
+               <h3>Contact Us</h3>
+               <p class="text-size-large">Booking@oslomuseum.com</p>
+               <p class="text-size-large">General@oslomuseum.com</p>
+            </div>
+            <div class="footer-section__logo-container">
+               <div class="logo-section">
+                  <a href="#" class="logo-section__name flex center-y text-size-large">
+                     <div class="logo-section__img"></div>
+                     Oslo Science Museum
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="footer-section-copyright">
+            <p class="text-size-large center-text">&copy; Copyright</p>
+         </div>
+      </footer>
    </body>
 </html>
