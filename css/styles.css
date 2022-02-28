@@ -49,19 +49,18 @@
    --margin-base: 50px;
    --padding-base: 20px;
 
-   /* container width*/
+   /* container width & height*/
 
    --section-width: 300px;
    --container-width: 280px;
    --container-width-wide: 320px;
    --cta-container-width: 280px;
+   --form-input-width: 280px;
+   --form-input-height: 40px;
 
-   /* container height */
    --banner-container-height: 500px;
-
    --number-icon-field-width: 55px;
    --number-icon-field-height: 55px;
-
    --container-img-height: 300px;
 
    /* Icon size */
@@ -78,9 +77,13 @@ body {
    font-family: "Source Sans Pro", sans-serif;
    margin: 0;
    grid-template-rows: auto auto auto auto;
+   background-color: #f5f1e9;
 }
 
-:is(h1, h2, h3, .header-nav__links) {
+h1,
+h2,
+h3,
+.header-nav__links {
    font-family: "Source Serif 4", sans-serif;
 }
 
@@ -531,6 +534,15 @@ h3 {
    color: var(--text-brown);
 }
 
+.icon-field--single-event {
+   left: 43%;
+   bottom: 64px;
+}
+
+.icon-field--event {
+   bottom: 65px;
+}
+
 :is(.icon-field, .icon-field--single-event) > * {
    font-size: var(--explore-icon);
 }
@@ -559,31 +571,6 @@ h3 {
 
 .banner-section-title--single-event {
    padding-top: 40px;
-}
-
-.single-event-parent-container {
-   position: absolute;
-   width: 100%;
-   height: auto;
-}
-.single-event-container {
-   position: absolute;
-   top: -250px;
-   height: 500px;
-}
-
-.single-event-container__img {
-   height: 410px;
-   background: no-repeat center/cover url("/images/event_night-in-the-museum.jpg");
-}
-
-.single-event-container__content {
-   height: 90px;
-   justify-content: space-around;
-}
-
-.single-event-description {
-   margin-top: 320px;
 }
 
 .event-cta-card__title-container,
@@ -621,14 +608,9 @@ h3 {
    position: relative;
 }
 
-.event-cta-card__date,
-.event-cta-card__date--single-event {
+.event-cta-card__date {
    margin: 0;
    padding-top: var(--padding-base);
-}
-
-.icon-field--event {
-   bottom: 65px;
 }
 
 .event-cta-card:hover > .event-cta-card__title-container,
@@ -647,6 +629,34 @@ h3 {
 
 .event-cta-card:hover > .event-cta-card__date-container .icon-field--event {
    bottom: 60px;
+}
+
+/* Single Event Styles */
+
+.single-event-parent-container {
+   position: absolute;
+   width: 100%;
+   height: auto;
+}
+.single-event-container {
+   position: absolute;
+   top: -250px;
+   height: 500px;
+}
+
+.single-event-container__img {
+   height: 410px;
+   background: no-repeat center/cover url("/images/event_night-in-the-museum.jpg");
+}
+
+.single-event-container__content {
+   height: 90px;
+   justify-content: space-between;
+   padding: 0 var(--padding-base);
+}
+
+.single-event-description {
+   margin-top: 320px;
 }
 
 /* Visit Page Styles */
@@ -668,6 +678,40 @@ h3 {
 }
 .visit-shop__img {
    background: no-repeat center/cover url("/images/visit_shop.jpg");
+}
+
+/* Contact Form */
+
+.contact-form,
+.contact-form__parent-container,
+.contact-form__child-container {
+   flex-direction: column;
+}
+
+.contact-form__label {
+   padding-bottom: calc(var(--padding-base) / 2);
+}
+
+.contact-form__input {
+   width: var(--form-input-width);
+   height: var(--form-input-height);
+}
+
+.contact-form__input,
+.contact-form__text-area {
+   outline: 2px solid var(--border-dark);
+   padding: calc(var(--padding-base) / 2);
+   box-sizing: border-box;
+   transition: outline 0.2s ease-out;
+}
+
+:is(.contact-form__input, .contact-form__text-area):hover {
+   outline: 2.75px solid var(--border-dark);
+}
+
+::placeholder {
+   color: var(--text-dark);
+   opacity: 0.7;
 }
 
 /* Footer */
@@ -707,11 +751,13 @@ h3 {
       --explore-icon: 30px;
 
       --banner-container-height: 750px;
+      --container-img-height: 450px;
 
       --number-icon-field-width: 100px;
       --number-icon-field-height: 100px;
 
-      --container-img-height: 450px;
+      --form-input-width: 360px;
+      --form-input-height: 60px;
    }
 
    .cta {
@@ -797,8 +843,8 @@ h3 {
    .icon-field--single-event {
       width: 75px;
       height: 75px;
-      bottom: 55px;
-      left: 575px;
+      bottom: 62px;
+      left: 605px;
    }
 
    .explore-cta-card:hover > .explore-cta-card__label-field .icon-field {
@@ -824,10 +870,6 @@ h3 {
       left: 140px;
    }
 
-   .event-cta-card__date--single-event {
-      padding-top: 0;
-   }
-
    .banner-section-title--single-event {
       padding-top: 120px;
    }
@@ -838,10 +880,21 @@ h3 {
 
    .single-event-container__img {
       background: no-repeat center/cover url("/images/event_night-in-the-museum-desktop.jpg");
+      height: 400px;
+   }
+
+   .single-event-container__content {
+      height: 100px;
+      justify-content: space-around;
    }
 
    .single-event-description {
       margin-top: 250px;
+   }
+
+   .contact-form__parent-container {
+      flex-direction: row;
+      justify-content: space-between;
    }
 
    .footer-section {
