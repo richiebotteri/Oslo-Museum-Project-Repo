@@ -223,7 +223,6 @@ h3 {
 .cta--yellow {
    background-color: var(--container-yellow);
    color: var(--text-brown);
-   outline: 0px solid var(--border-light);
    transition-property: background-color, color, outline;
    transition: 0.2s ease-out;
 }
@@ -231,10 +230,11 @@ h3 {
 .cta--yellow:hover {
    background-color: var(--container-dark-purple);
    color: var(--text-light);
-   outline: 3px solid var(--border-light);
+   outline: 3.5px solid var(--border-light);
 }
 
-.cta--purple {
+.cta--purple,
+.cta--contact-page-purple {
    background-color: var(--container-dark-purple);
    color: var(--text-light);
    transition-property: background-color, color;
@@ -242,8 +242,16 @@ h3 {
 }
 
 .cta--purple:hover {
-   background-color: var(--section-color-dark);
-   color: var(--text-light);
+   background-color: var(--container-yellow);
+   color: var(--text-brown);
+   outline: 3.5px solid var(--border-dark);
+}
+
+.cta--contact-page-purple:hover {
+   background-color: var(--section-color-light);
+   color: var(--text-dark);
+   outline: 3.5px solid var(--border-dark);
+   cursor: pointer;
 }
 
 /* Header Section Styles*/
@@ -263,8 +271,8 @@ h3 {
 
 .logo-section__img {
    display: inline-block;
-   width: 54px;
-   height: 54px;
+   min-width: 60px;
+   min-height: 60px;
    margin-right: 20px;
    background: no-repeat center/cover url("/images/Project-Semester-Logo-2.png");
 }
@@ -283,11 +291,15 @@ h3 {
 .banner-section {
    z-index: 3;
    color: var(--text-light);
-   background: linear-gradient(180deg, rgba(57, 42, 89, 1) 0%, rgba(105, 41, 131, 1) 35%, rgba(111, 27, 134, 1) 100%);
+   background: linear-gradient(180deg, rgba(57, 42, 89, 0.6) 0%, rgba(105, 41, 131, 0.9) 50%, rgba(105, 41, 131, 0.6) 100%), url("/images/banner-texture.png") no-repeat center/cover;
 }
 
 .banner-section-img {
    background: linear-gradient(180deg, rgba(57, 42, 89, 0.5) 0%, rgba(57, 42, 89, 0.5) 100%), url("/images/Homepage-Hero-banner.jpg") no-repeat center/cover;
+}
+
+.banner-section-img--get-involved {
+   background: linear-gradient(180deg, rgba(57, 42, 89, 0.5) 0%, rgba(57, 42, 89, 0.5) 100%), url("/images/get-involved-banner.jpg") no-repeat center/cover;
 }
 
 .banner-container-height {
@@ -709,6 +721,10 @@ h3 {
    outline: 2.75px solid var(--border-dark);
 }
 
+input[type="submit" i] {
+   border-style: none;
+}
+
 ::placeholder {
    color: var(--text-dark);
    opacity: 0.7;
@@ -750,8 +766,8 @@ h3 {
       --cta-container-width: 400px;
       --explore-icon: 30px;
 
-      --banner-container-height: 750px;
-      --container-img-height: 450px;
+      --banner-container-height: 700px;
+      --container-img-height: 600px;
 
       --number-icon-field-width: 100px;
       --number-icon-field-height: 100px;
@@ -781,6 +797,11 @@ h3 {
       grid-template-columns: 315px 685px;
       justify-content: space-between;
       align-items: center;
+   }
+
+   .logo-section__img {
+      width: 60px;
+      height: 60px;
    }
    .header-nav {
       display: block;
