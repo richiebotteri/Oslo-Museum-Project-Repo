@@ -376,17 +376,14 @@ h3 {
    padding-top: 10px;
 }
 
-.sticky-nav__menu-btn > * {
-   cursor: pointer;
-}
-
 .sticky-nav__menu-btn-icon {
    font-size: 25px;
-   padding-top: 10px;
+   padding-bottom: 10px;
 }
 
 .sticky-nav__menu-btn-label {
    flex-direction: column;
+   cursor: pointer;
 }
 
 .sticky-nav__menu-btn-checkbox {
