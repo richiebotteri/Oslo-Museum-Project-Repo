@@ -261,7 +261,7 @@ h3 {
    padding: 30px 0;
 }
 
-.header-wrapper {
+.header-container {
    grid-template-columns: auto;
 }
 
@@ -796,7 +796,7 @@ input[type="submit" i] {
       padding: 40px;
    }
 
-   .header-wrapper {
+   .header-container {
       grid-template-columns: 315px 685px;
       justify-content: space-between;
       align-items: center;
