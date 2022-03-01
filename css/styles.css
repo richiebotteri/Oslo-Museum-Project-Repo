@@ -482,6 +482,12 @@ h3 {
    background-size: 230%;
 }
 
+.explore-cta-card__image-field--kids,
+.explore-cta-card__image-field--teacher,
+.explore-cta-card__image-field--researcher {
+   transition: background 0.2s ease-in-out;
+}
+
 .explore-cta-card__image-field--kids {
    background: no-repeat center/170% url("/images/explore_For-kids.jpg");
 }
