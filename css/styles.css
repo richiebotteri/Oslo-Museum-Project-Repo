@@ -348,9 +348,9 @@ h3 {
    z-index: 3;
    position: sticky;
    bottom: 0vh;
-   height: 75px;
+   height: auto;
    border-top: 3px solid var(--border-light);
-   border-bottom: 7px solid var(--container-dark-purple);
+   /* border-bottom: 8px solid var(--container-dark-purple); */
    background-color: var(--section-color-dark-purple);
 }
 
@@ -364,9 +364,11 @@ h3 {
    transition: background-color, color 0.2s ease-out;
 }
 
-:is(.sticky-nav__link-btn, .sticky-nav__menu-btn):hover,
-:is(.sticky-nav__link-btn, .sticky-nav__menu-btn):active {
+:is(.sticky-nav__link-btn, .sticky-nav__menu-btn):hover {
+   /* With fallback colors */
+   background-color: #f5b972;
    background-color: var(--container-yellow);
+   color: #492817;
    color: var(--text-brown);
 }
 
