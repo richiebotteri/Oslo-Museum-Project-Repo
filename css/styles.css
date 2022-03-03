@@ -350,7 +350,7 @@ h3 {
    bottom: 0vh;
    height: 75px;
    border-top: 3px solid var(--border-light);
-   border-bottom: 4px solid var(--container-dark-purple);
+   border-bottom: 7px solid var(--container-dark-purple);
    background-color: var(--section-color-dark-purple);
 }
 
@@ -364,7 +364,8 @@ h3 {
    transition: background-color, color 0.2s ease-out;
 }
 
-:is(.sticky-nav__link-btn, .sticky-nav__menu-btn):hover {
+:is(.sticky-nav__link-btn, .sticky-nav__menu-btn):hover,
+:is(.sticky-nav__link-btn, .sticky-nav__menu-btn):active {
    background-color: var(--container-yellow);
    color: var(--text-brown);
 }
