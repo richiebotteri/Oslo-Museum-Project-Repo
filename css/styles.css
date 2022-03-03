@@ -322,18 +322,22 @@ h3 {
    background-color: var(--container-dark-purple);
 }
 
+.breadcrumb__container {
+   box-sizing: border-box;
+   padding-left: 20px;
+}
+
 .breadcrumb__container > * {
    color: var(--text-light);
    margin: 10px 0;
 }
 
 .breadcrumb__icon {
-   padding: 0 calc(var(--padding-base) - 10px);
+   padding: 0 10px;
 }
 
 .breadcrumb__container-link {
    text-decoration: underline;
-   padding-left: var(--padding-base);
 }
 
 /* Sticky Menu Styles*/
@@ -832,6 +836,11 @@ input[type="submit" i] {
    .header-nav__items:hover > .header-nav__links {
       text-decoration: 8px underline var(--container-yellow);
       text-underline-offset: 5px;
+   }
+
+   .breadcrumb__container {
+      box-sizing: content-box;
+      padding-left: 0;
    }
 
    .cta-container {
