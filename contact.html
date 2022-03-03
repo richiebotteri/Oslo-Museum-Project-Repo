@@ -12,7 +12,7 @@
    </head>
    <body>
       <header class="header">
-         <div class="header-container margin-center container-width grid">
+         <div class="header-container margin-center container-width-wide grid">
             <a href="index.html" class="logo-section__name flex center-y text-size-x-large">
                <div class="logo-section__img"></div>
                Oslo Science Museum
@@ -40,7 +40,7 @@
       </header>
       <main class="main">
          <div class="breadcrumb">
-            <div class="breadcrumb__container container-width margin-center flex center-y">
+            <div class="breadcrumb__container container-width-wide margin-center flex center-y">
                <a href="Index.html" class="breadcrumb__container-link text-size-large">Home</a>
                <p class="breadcrumb__icon text-size-large"><i class="fa-solid fa-angle-right"></i></p>
                <p class="text-size-large">Contact</p>
@@ -48,36 +48,38 @@
          </div>
          <section class="banner-section">
             <div class="banner-container-height container-width-wide margin-center padding-vertical-x2 flex center-y">
-               <h1 class="padding-all-sides">Lets talk, Send us a message!</h1>
+               <h1 class="padding-all-sides">Lets talk! Send us a message.</h1>
             </div>
          </section>
-         <section class="explore-kids container-width margin-center margin-vertical">
-            <div class="explore-kids-container flex center-y">
-               <h2 id="contact-anchor-link" class="explore-kids-container__title">Contact Us</h2>
-            </div>
-            <p class="text-size-x-large">Fill out the quick form underneath and we will contact you as soon as we can in regards to your student class visit, volunteering, internship or donation.</p>
-         </section>
-         <form action="#" method="post" class="contact-form flex container-width margin-vertical margin-center">
-            <div class="contact-form__parent-container flex">
-               <div class="contact-form__child-container padding-vertical flex">
-                  <label class="contact-form__label text-size-large" for="input-first-name">First name</label>
-                  <input class="contact-form__input text-size-medium" type="text" id="input-first-name" name="first-name" placeholder="Ron" />
+         <div class="margin-vertical">
+            <section class="explore-kids container-width margin-center">
+               <div class="explore-kids-container flex center-y">
+                  <h2 id="contact-anchor-link" class="explore-kids-container__title">Contact Us</h2>
                </div>
-               <div class="contact-form__child-container padding-vertical flex">
-                  <label class="contact-form__label text-size-large" for="input-last-name">Last name</label>
-                  <input class="contact-form__input text-size-medium" type="text" id="input-last-name" name="last-name" placeholder="Willinger" />
+               <p class="text-size-x-large">Fill out the quick form underneath and we will contact you as soon as we can in regards to your student class visit, volunteering, internship or donation.</p>
+            </section>
+            <form action="#" method="post" class="contact-form flex container-width margin-vertical margin-center">
+               <div class="contact-form__parent-container grid">
+                  <div class="contact-form__child-container flex">
+                     <label class="contact-form__label text-size-large" for="input-first-name">First name</label>
+                     <input class="contact-form__input text-size-medium" type="text" id="input-first-name" name="first-name" placeholder="Ron" />
+                  </div>
+                  <div class="contact-form__child-container flex">
+                     <label class="contact-form__label text-size-large" for="input-last-name">Last name</label>
+                     <input class="contact-form__input text-size-medium" type="text" id="input-last-name" name="last-name" placeholder="Willinger" />
+                  </div>
+                  <div class="contact-form__child-container flex">
+                     <label class="contact-form__label text-size-large" for="input-email">Email</label>
+                     <input class="contact-form__input text-size-medium" type="email" id="input-email" name="email" placeholder="Ron.willinger@example.com" />
+                  </div>
                </div>
-               <div class="contact-form__child-container padding-vertical flex">
-                  <label class="contact-form__label text-size-large" for="input-email">Email</label>
-                  <input class="contact-form__input text-size-medium" type="email" id="input-email" name="email" placeholder="Ron.willinger@example.com" />
+               <div class="contact-form__child-container margin-vertical flex">
+                  <label class="contact-form__label text-size-large" for="text-area-message">Message</label>
+                  <textarea class="contact-form__text-area container-width padding-vertical text-size-medium" name="message" id="text-area-message" cols="30" rows="10" placeholder="I'm interested in being a volunteer"></textarea>
                </div>
-            </div>
-            <div class="contact-form__child-container padding-vertical flex">
-               <label class="contact-form__label text-size-large" for="text-area-message">Message</label>
-               <textarea class="contact-form__text-area container-width padding-vertical text-size-medium" name="message" id="text-area-message" cols="30" rows="10" placeholder="I'm interested in being a volunteer"></textarea>
-            </div>
-            <input type="submit" name="submit" class="cta cta--contact-page-purple margin-center margin-vertical" value="Send Now" />
-         </form>
+               <input type="submit" name="submit" class="cta cta--contact-page-purple margin-center" value="Send Now" />
+            </form>
+         </div>
       </main>
       <footer class="footer">
          <section class="footer-section container-width margin-center padding-vertical-x2 grid center-x">
