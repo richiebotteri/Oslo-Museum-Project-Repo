@@ -6,9 +6,11 @@
    /* Colors */
 
    --section-color-dark: #392a59;
+   --section-color-dark-purple: #6f1b86;
    --section-color-light: #f5f1e9;
 
    --container-yellow: #f5b972;
+   --container-purple: #9c27b0;
    --container-dark-purple: #6f1b86;
 
    --border-dark: #392a59;
@@ -218,14 +220,14 @@ h3 {
 }
 
 .cta--yellow:hover {
-   background-color: var(--container-dark-purple);
+   background-color: var(--container-purple);
    color: var(--text-light);
    outline: 3.5px solid var(--border-light);
 }
 
 .cta--purple,
 .cta--contact-page-purple {
-   background-color: var(--container-dark-purple);
+   background-color: var(--container-purple);
    color: var(--text-light);
    transition-property: background-color, color;
    transition: 0.2s ease-out;
@@ -319,7 +321,7 @@ h3 {
 /* Breadcrumb Styles */
 
 .breadcrumb {
-   background-color: var(--container-dark-purple);
+   background-color: var(--section-color-dark-purple);
 }
 
 .breadcrumb__container {
@@ -349,7 +351,7 @@ h3 {
    height: 75px;
    border-top: 3px solid var(--border-light);
    border-bottom: 4px solid var(--container-dark-purple);
-   background-color: var(--container-dark-purple);
+   background-color: var(--section-color-dark-purple);
 }
 
 .sticky-nav__link-btn,
