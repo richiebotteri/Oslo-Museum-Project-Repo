@@ -506,26 +506,6 @@ h3 {
    background: no-repeat center/170% url("/images/explore_for-reasearchers.jpg");
 }
 
-.explore-kids-container__img-newtonian {
-   background: no-repeat center/cover url("/images/explore-newtonian-2.jpg");
-}
-
-.explore-kids-container__img-star-club {
-   background: no-repeat center/cover url("/images/explore-star-club.jpg");
-}
-
-.explore-kids-container__img-star-club {
-   background: no-repeat center/cover url("/images/explore-star-club.jpg");
-}
-
-.explore-kids-container__img-holiday {
-   background: no-repeat center/cover url("/images/explore-holiday-2.jpg");
-}
-
-.explore-teacher-container__img {
-   background: no-repeat center/cover url("/images/explore-teacher.jpg");
-}
-
 .explore-researcher-container__img {
    background: no-repeat center/cover url("/images/explore_for-reasearchers.jpg");
 }
@@ -696,15 +676,15 @@ h3 {
    margin-right: 15px;
 }
 
-.visit-location__img {
-   background: no-repeat center/cover url("/images/Visit_location-building.jpg");
-}
-
-.visit-food-drink__img {
-   background: no-repeat center/cover url("/images/visit_cafe.jpg");
-}
-.visit-shop__img {
-   background: no-repeat center/cover url("/images/visit_shop.jpg");
+.visit-location__img,
+.visit-food-drink__img,
+.visit-shop__img,
+.explore-kids-container__img-newtonian,
+.explore-kids-container__img-star-club,
+.explore-kids-container__img-holiday,
+.explore-teacher-container__img,
+.explore-researcher-container__img {
+   object-fit: cover;
 }
 
 /* Contact Form */
