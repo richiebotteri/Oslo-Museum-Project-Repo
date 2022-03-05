@@ -822,12 +822,12 @@ input[type="submit" i] {
 
    .active-page-link {
       text-decoration: 8px underline var(--container-yellow);
-      text-underline-offset: 5px;
+      text-underline-offset: 8px;
    }
 
    .header-nav__items:hover > .header-nav__links {
       text-decoration: 8px underline var(--container-yellow);
-      text-underline-offset: 5px;
+      text-underline-offset: 8px;
    }
 
    .breadcrumb__container {
