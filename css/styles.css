@@ -391,11 +391,6 @@ h3 {
    padding-bottom: 10px;
 }
 
-.sticky-nav__menu-btn-label {
-   flex-direction: column;
-   cursor: pointer;
-}
-
 .sticky-nav__menu-btn-checkbox {
    display: none;
 }
@@ -416,7 +411,7 @@ h3 {
    box-sizing: border-box;
    position: absolute;
    top: -324px;
-   left: -240px;
+   left: 121.5px;
    height: 321px;
    line-height: 1.9;
    cursor: pointer;
